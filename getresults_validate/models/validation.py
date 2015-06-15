@@ -1,3 +1,5 @@
+from uuid import uuid4
+
 from django.db import models
 
 from simple_history.models import HistoricalRecords
@@ -21,7 +23,8 @@ class Validation(BaseUuidModel):
         null=True)
 
     validation_reference = models.CharField(
-        max_length=25)
+        max_length=36,
+        default=uuid4)
 
     validation = models.CharField(
         max_length=25,
@@ -42,4 +45,5 @@ class Validation(BaseUuidModel):
         return '{}: {}'.format(self.utestid_name, self.validation_reference)
 
     class Meta:
-        app_label = 'validate'
+        app_label = 'getresults_validate'
+        db_table = 'getresults_validation'

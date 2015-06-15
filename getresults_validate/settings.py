@@ -38,8 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'getresults',
-    'validate',
+    'getresults_validate',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,7 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'validate.urls'
+ROOT_URLCONF = 'getresults_validate.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'validate.wsgi.application'
+WSGI_APPLICATION = 'getresults_validate.wsgi.application'
 
 
 # Database

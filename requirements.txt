@@ -1,0 +1,7 @@
+python-dateutil
+Django==1.8.2
+Unipath
+pytz
+django-simple-history
+-e git+https://github.com/botswana-harvard/edc-base@develop#egg=edc_base
+-e git+https://github.com/botswana-harvard/getresults-aliquot@develop#egg=getresults_aliquot

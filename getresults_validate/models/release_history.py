@@ -34,4 +34,5 @@ class ReleaseHistory(BaseUuidModel):
         return '{}: {}'.format(self.utestid_name, self.validation_reference)
 
     class Meta:
-        app_label = 'validate'
+        app_label = 'getresults_validate'
+        db_table = 'getresults_releasehistory'
